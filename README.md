@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+## Простое SPA на React + TS + Redux:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Функционал:**
 
-Currently, two official plugins are available:
+ - Блок "Header" состоит из картинки (из открытых источников), выпадающего списка языков (ru, en) и компонента "Watch" в формате "hh:mm:ss" (часы должны показывать реальное время)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - Блок "Main" состоит из списка отзывов в формате (имя клиента, отзыв, дата). Количество отзывов на одной странице - 10шт (max), если отзывов больше - должна быть реализована пагинация страниц в формате (min ... mid... max).
 
-## Expanding the ESLint configuration
+**Реализация:** 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ - Стэк: React, TypeScript, Redux;
+ - Использовал useContex и createContext для создания контекста мультиязычности + сохранения локали в localStorage;
+ - Реализована пагинация по 10 элементов на странице с сохранением текущей страницы, в формате (min ... mid... max)
