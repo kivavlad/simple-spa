@@ -1,0 +1,1 @@
+export {default as reviews} from "./replies/reducer";

@@ -1,0 +1,12 @@
+{
+  "ru": {
+    "title": "Простое SPA",
+    "name": "Имя",
+    "review": "Отзыв"
+  },
+  "en": {
+    "title": "Simple SPA",
+    "name": "Name",
+    "review": "Review"
+  }
+}

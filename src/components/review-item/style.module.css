@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 20px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bold {
+  font-size: 16px;
+  font-weight: bold;
+}
